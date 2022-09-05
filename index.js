@@ -1,6 +1,7 @@
 
 const express = require('express');
 const app = express();
+const port = process.env.PORT||5001
 
 app.get('*',(req, res)=>{
     console.log('route hit')
@@ -9,5 +10,5 @@ app.get('*',(req, res)=>{
 })
 app.listen(5001, () => {
     //listen to port
-    console.log(`Server started at http://localhost:5001`);
+    console.log(`Server started at http://localhost:${port}`);
   });
