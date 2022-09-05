@@ -1,7 +1,7 @@
 
 const express = require('express');
 const app = express();
-const port = process.env.PORT||5001
+const port = process.env.PORT||7021
 
 app.get('*',(req, res)=>{
     console.log('route hit')
